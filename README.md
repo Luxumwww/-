@@ -6,7 +6,7 @@
 
 ## 下载与运行
 
-在本仓库的 **Releases** 页面下载 `哈基米.exe`，双击运行。当前版本 **v0.4.0**，适用于 Windows x64。
+在本仓库的 [Releases](https://github.com/Luxumwww/-/releases/latest) 页面下载 `Hajimi.exe`，双击运行。当前版本 **v0.4.0**，适用于 Windows x64。
 
 EXE 内含运行环境、图片和音频，无需另外安装 .NET，也无需外部素材文件夹。源码仓库不包含编译好的 EXE。
 

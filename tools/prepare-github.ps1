@@ -61,13 +61,13 @@ if (-not $SourceOnly) {
     $petExecutable = Join-Path $petRoot '哈基米.exe'
     if (-not (Test-Path -LiteralPath $petExecutable)) { throw 'Source ZIP completed. Run tools/package.ps1 first to prepare a release executable.' }
     [void][System.IO.Directory]::CreateDirectory($petRelease)
-    Copy-Item -LiteralPath $petExecutable -Destination (Join-Path $petRelease '哈基米.exe')
+    Copy-Item -LiteralPath $petExecutable -Destination (Join-Path $petRelease 'Hajimi.exe')
     $petHash = (Get-FileHash -LiteralPath $petExecutable -Algorithm SHA256).Hash.ToLowerInvariant()
-    [System.IO.File]::WriteAllText((Join-Path $petRelease 'SHA256SUMS.txt'), ($petHash + '  哈基米.exe' + [Environment]::NewLine), $petUtf8)
+    [System.IO.File]::WriteAllText((Join-Path $petRelease 'SHA256SUMS.txt'), ($petHash + '  Hajimi.exe' + [Environment]::NewLine), $petUtf8)
     $petReleaseNotes = @"
 # 哈基米桌宠 v$petVersion
 
-Windows x64 单文件桌宠。下载哈基米.exe 后直接运行，无需另外安装 .NET。
+Windows x64 单文件桌宠。下载 Hajimi.exe 后直接运行，无需另外安装 .NET。
 
 - 内置角色图片、声音和运行环境，使用猫咪 ICO 图标。
 - 六类右键菜单：动作、性格、吃饭、声音、显示、睡眠。
@@ -85,7 +85,7 @@ $petGuide = @"
 # GitHub 上传文件
 
 1. 源码/Hajimi 内的文件上传到仓库根目录；Hajimi-source-v$petVersion.zip 是同一份内容的压缩包，请先解压再上传。
-2. 发布附件/哈基米.exe 和 SHA256SUMS.txt 上传到 GitHub Releases，版本标签 v$petVersion。
+2. 发布附件/Hajimi.exe 和 SHA256SUMS.txt 上传到 GitHub Releases，版本标签 v$petVersion。
 3. release-notes.md 可复制为 Release 说明。
 
 源码与运行版分别存放。源码不含 bin、obj、旧 EXE、工具缓存、原始截图日志和重复图片。
