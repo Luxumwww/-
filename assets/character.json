@@ -1,0 +1,33 @@
+{
+  "name": "哈基米",
+  "canvasWidth": 500,
+  "canvasHeight": 340,
+  "poses": {
+    "sleep": { "file": "reference/待机状态.png", "width": 230 },
+    "contempt": { "file": "reference/蔑视状态.png", "width": 292 },
+    "chew": { "file": "reference/嚼口香糖形态.png", "width": 412 },
+    "hiss": { "file": "reference/炸毛哈气.png", "width": 290 },
+    "rag": { "file": "reference/烂抹布状态.png", "width": 412 },
+    "scared": { "file": "reference/惊恐弓背.png", "width": 285, "facesLeft": true },
+    "sit-contempt": { "file": "reference/坐立蔑视.png", "width": 184 },
+    "sit-hiss": { "file": "reference/坐立哈气.png", "width": 201 },
+    "walk-0": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [0,57,512,308], "trim": false },
+    "walk-1": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [512,53,512,308], "trim": false },
+    "walk-2": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [0,422,512,308], "trim": false },
+    "walk-3": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [512,422,512,308], "trim": false },
+    "walk-4": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [0,790,512,308], "trim": false },
+    "walk-5": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [512,788,512,308], "trim": false },
+    "walk-6": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [0,1156,512,308], "trim": false },
+    "walk-7": { "file": "generated/walk-v031-atlas.png", "width": 450, "source": [512,1156,512,308], "trim": false },
+    "calm-sit": { "file": "generated/behaviors-v2-atlas.png", "width": 250, "source": [184,8,500,514], "fallback": "sleep" },
+    "groom": { "file": "generated/behaviors-v2-atlas.png", "width": 290, "source": [842,98,610,411], "fallback": "rag" },
+    "eat": { "file": "generated/behaviors-v2-atlas.png", "width": 400, "source": [12,590,782,390], "fallback": "chew" },
+    "post-chew": { "file": "generated/behaviors-v2-atlas.png", "width": 343, "source": [851,509,659,490], "fallback": "contempt" },
+    "wake-low": { "file": "generated/transitions-atlas.png", "width": 306, "source": [100,125,600,245], "fallback": "sleep" },
+    "wake-high": { "file": "generated/transitions-atlas.png", "width": 350, "source": [731,4,645,375], "fallback": "contempt" },
+    "walk-a": { "file": "generated/transitions-atlas.png", "width": 400, "source": [1398,60,765,329], "fallback": "chew" },
+    "walk-b": { "file": "generated/transitions-atlas.png", "width": 400, "source": [8,386,708,330], "fallback": "chew" },
+    "lower": { "file": "generated/transitions-atlas.png", "width": 398, "source": [716,400,728,314], "fallback": "rag" },
+    "rag-before": { "file": "generated/transitions-atlas.png", "width": 412, "source": [1444,495,722,204], "fallback": "rag" }
+  }
+}

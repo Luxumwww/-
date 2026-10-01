@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>..\..\图标.ico</ApplicationIcon>
+    <AssemblyName>Hajimi</AssemblyName>
+    <Version>0.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\assets\**\*" Exclude="..\..\assets\generated\walk-v031-candidate.png;..\..\assets\generated\walk-v031-clean.png" Link="assets\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <EmbeddedResource Include="..\..\assets\**\*" Exclude="..\..\assets\generated\walk-v031-candidate.png;..\..\assets\generated\walk-v031-clean.png" LogicalName="PetAsset/%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="..\..\图标.ico" LogicalName="Hajimi.ApplicationIcon" />
+  </ItemGroup>
+</Project>

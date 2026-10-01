@@ -1,0 +1,40 @@
+# Build and local verification
+**/bin/
+**/obj/
+.vs/
+.vscode/
+*.user
+*.suo
+release/
+artifacts/
+publish/
+
+# Prepared uploads and compiled binaries belong in GitHub Releases
+/GitHub发布/
+/*.exe
+/*.zip
+
+# Local Python/runtime caches
+tools/_deps/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Duplicate inputs and rejected or superseded assets
+素材/图片/
+assets/generated/walk-v031-candidate.png
+assets/generated/walk-v031-clean.png
+assets/generated/walk-rig-v3.png
+assets/generated/walk-v2-atlas.png
+assets/audio/hiss.wav
+
+# Machine-specific data
+.env
+.env.*
+*.log
+*.pfx
+*.snk
+.DS_Store
+Thumbs.db
+desktop.ini
